@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'brand-roman';
+    src: url('./assets/fonts/helveticaneuecyr-roman-webfont.woff');
+}
+@font-face {
+    font-family: 'brand-bold';
+    src: url('./assets/fonts/helveticaneuecyr-bold-webfont.woff');
+}
+@font-face {
+    font-family: 'brand-light';
+    src: url('./assets/fonts/helveticaneuecyr-light-webfont.woff');
+}
+@font-face {
+    font-family: 'brand-medium';
+    src: url('./assets/fonts/helveticaneuecyr-medium-webfont.woff');
+}
+@font-face {
+    font-family: 'brand-ultralight';
+    src: url('./assets/fonts/helveticaneuecyr-ultralight-webfont.woff');
+}
