@@ -1,5 +1,5 @@
 <template>
-  <div id="container" class="bg-white font-brand-roman" style="">
+  <div id="container" class="bg-white font-brand-roman">
     <Nav />
     <router-view></router-view>
     <Links />
@@ -19,7 +19,6 @@ import Contact from './components/Contact.vue'
 
 <style>
 body {
-  overflow-y: scroll !important;
-
+  overflow-x: hidden !important;
 }
 </style>

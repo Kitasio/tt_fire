@@ -1,5 +1,5 @@
 <template>
-    <div class="icon-box-size w-1/3 mb-5 ml-3 flex justify-between items-center fixed bottom-0 md:mx-main-x md:my-main-y">
+    <div class="icon-box-size mix-blend-difference w-1/3 mb-5 ml-3 flex justify-between items-center fixed bottom-0 md:mx-main-x md:my-main-y">
         <div v-for="(icon, index) in icons" :key="index">
             <a :href="icon.url">
                 <img :class="icon.css" :src="icon.path" alt="">
@@ -14,17 +14,17 @@ import { ref } from "vue";
 
 const icons = ref([
     {
-        path: '../public/icons/tg.png',
+        path: '/icons/tg.png',
         url: '#',
         css: 'w-5 2xl:w-6',
     },
     {
-        path: '../public/icons/beh.png',
+        path: '/icons/beh.png',
         url: '#',
         css: 'w-6 2xl:w-7',
     },
     {
-        path: '../public/icons/ins.png',
+        path: '/icons/inst.png',
         url: '#',
         css: 'w-5 2xl:w-6',
     },
