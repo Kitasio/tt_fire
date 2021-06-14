@@ -40,7 +40,7 @@ onMounted(() => {
 </script>
 
 <style>
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 768px) {
     #freshProj {
         font-size: 1vw;
     }

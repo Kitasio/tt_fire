@@ -32,7 +32,7 @@ const icons = ref([
 </script>
 
 <style>
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 768px) {
     .icon-box-size {
         width: 9vw !important;
     }
