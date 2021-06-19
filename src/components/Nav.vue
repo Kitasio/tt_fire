@@ -1,5 +1,5 @@
 <template>
-  <div class="mix-blend-difference mt-main-y w-full fixed">
+  <div class="mix-blend-difference mt-main-y w-full fixed z-20">
       <div class="flex md:justify-center w-screen">
             <div class="md:hidden h-8 flex justify-between items-center w-full mt-main-y mx-main-x">
               <router-link to="/">

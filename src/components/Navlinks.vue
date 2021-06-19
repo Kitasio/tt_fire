@@ -21,7 +21,7 @@ export default {
 }
 @media only screen and (min-width: 768px) {
     #about {
-        margin-right: 0.7vw !important;
+        margin-right: 1.5vw !important;
     }
     .main-text {
         writing-mode:initial;
