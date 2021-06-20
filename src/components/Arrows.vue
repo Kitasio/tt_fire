@@ -1,21 +1,30 @@
 <template>
-  <div id="arrow1" class="animate-bounce h-10 absolute w-0.5 mix-blend-difference bg-white"></div>
-  <div id="arrow2" class="animate-bounce h-10 absolute w-0.5 mix-blend-difference bg-white"></div>
+  <div id="arrow1" class="absolute w-0.5 mix-blend-difference bg-white"></div>
+  <div id="arrow2" class="absolute w-0.5 mix-blend-difference bg-white"></div>
 </template>
 
-<script>
-export default {
+<script setup>
+import { onMounted } from "@vue/runtime-core"
+onMounted(() => {
+  const tl1 = gsap.timeline({ repeat: -1 })
+  tl1.from("#arrow1", { scaleY: 0, transformOrigin: "top", duration: .7, delay: 1, ease: "power2.out" })
+  tl1.to("#arrow1", { scaleY: 0, transformOrigin: "bottom", duration: .7, ease: "power2.in" })
 
-}
+  const tl2 = gsap.timeline({ repeat: -1 })
+  tl2.from("#arrow2", { scaleY: 0, transformOrigin: "top", duration: .7, delay: 1, ease: "power2.out" })
+  tl2.to("#arrow2", { scaleY: 0, transformOrigin: "bottom", duration: .7, ease: "power2.in" })
+})
 </script>
 
 <style>
 #arrow1 {
-    top: 50%;
-    left: 15%;
+    top: 28%;
+    left: 11%;
+    height: 45%;
 }
 #arrow2 {
-    top: 50%;
-    right: 15%;
+    top: 28%;
+    right: 11%;
+    height: 45%;
 }
 </style>
