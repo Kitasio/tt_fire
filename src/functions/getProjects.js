@@ -3,6 +3,7 @@ import { db } from '../firebase/config'
 
 const getProjects = () => {
     const projects = ref([])
+    const ids = ref([])
     const error = ref(null)
 
     const load = async () => {
@@ -11,13 +12,15 @@ const getProjects = () => {
             projects.value = res.docs.map(doc => {
                 return { ...doc.data(), id: doc.id }
             })
-            console.log(projects.value)
+            for (let index = 0; index < res.docs.length; index++) {
+                ids.value[index] = res.docs[index].id;
+            }
         } catch (err) {
             console.log(err)
         }
     }
 
-    return { projects, error, load }
+    return { projects, error, ids, load }
 }
 
 export default getProjects

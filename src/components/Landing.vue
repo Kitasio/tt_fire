@@ -10,27 +10,30 @@
             fresh project<span class="mx-4" style="color: #00ffde">*</span>
         </div>
         <div class="relative w-full mx-auto h-full md:h-1/2">
-            <a href="#">
-                <img id="proj1" class="labels absolute object-cover h-full  w-full" src="../assets/blue.png" alt="">
-            </a>
-            <a href="##">
+            <router-link v-for="project in projects" :key="project.id" :to="`/portfolio/${project.id}`">
+                <img :id="project.id" class="labels absolute object-cover h-full  w-full" :src="project.img" alt="">
+            </router-link>
+            <!-- <a href="##">
                 <img id="proj2" class="labels absolute object-cover h-full  w-full" src="../assets/package.jpg" alt="">
             </a>
             <a href="###">
                 <img id="proj3" class="labels absolute object-cover h-full  w-full" src="../assets/ball.jpg" alt="">
-            </a>
+            </a> -->
         </div>
-
+        {{ids}}
   </div>
 </template>
 
 <script setup>
 import { onMounted } from '@vue/runtime-core'
 import projectAnim from '../functions/projectAnim'
+import getProjects from '../functions/getProjects'
+import {ref} from 'vue'
 
+const { projects, error, ids, load } = getProjects()
 const { anim } = projectAnim()
-
 onMounted(() => {
+    load()
     anim()
     const tl = gsap.timeline({ repeat: -1 })
     tl.set("#freshProj", {xPercent: -8})
