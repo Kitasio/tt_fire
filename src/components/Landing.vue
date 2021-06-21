@@ -2,12 +2,12 @@
   <div id="main-anim" class="flex flex-col md:justify-center md:items-center md:w-1/2 mx-auto pt-14 pb-14 h-screen overflow-x-hidden">
           
         <div id="freshProj" class="uppercase mix-blend-difference whitespace-nowrap text-white">
-            fresh project<span class="mx-4" style="color: #5bd1d1">*</span>
-            fresh project<span class="mx-4" style="color: #5bd1d1">*</span>
-            fresh project<span class="mx-4" style="color: #5bd1d1">*</span>
-            fresh project<span class="mx-4" style="color: #5bd1d1">*</span>
-            fresh project<span class="mx-4" style="color: #5bd1d1">*</span>
-            fresh project<span class="mx-4" style="color: #5bd1d1">*</span>
+            fresh project<span class="mx-4" style="color: #00ffde">*</span>
+            fresh project<span class="mx-4" style="color: #00ffde">*</span>
+            fresh project<span class="mx-4" style="color: #00ffde">*</span>
+            fresh project<span class="mx-4" style="color: #00ffde">*</span>
+            fresh project<span class="mx-4" style="color: #00ffde">*</span>
+            fresh project<span class="mx-4" style="color: #00ffde">*</span>
         </div>
         <div class="relative w-full mx-auto h-full md:h-1/2">
             <a href="#">
