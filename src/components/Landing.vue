@@ -10,17 +10,20 @@
             fresh project<span class="mx-4" style="color: #00ffde">*</span>
         </div>
         <div class="relative w-full mx-auto h-full md:h-1/2">
-            <router-link v-for="project in projects" :key="project.id" :to="`/portfolio/${project.id}`">
+            <!-- <router-link v-for="project in projects" :key="project.id" :to="`/portfolio/${project.id}`">
                 <img :id="project.id" class="labels absolute object-cover h-full  w-full" :src="project.img" alt="">
-            </router-link>
-            <!-- <a href="##">
+            </router-link> -->
+
+            <a href="##">
+                <img id="proj1" class="labels absolute object-cover h-full  w-full" src="../assets/blue.png" alt="">
+            </a>
+            <a href="##">
                 <img id="proj2" class="labels absolute object-cover h-full  w-full" src="../assets/package.jpg" alt="">
             </a>
             <a href="###">
                 <img id="proj3" class="labels absolute object-cover h-full  w-full" src="../assets/ball.jpg" alt="">
-            </a> -->
+            </a>
         </div>
-        {{ids}}
   </div>
 </template>
 

@@ -22,3 +22,23 @@
     font-family: 'brand-ultralight';
     src: url('./assets/fonts/helveticaneuecyr-ultralight-webfont.woff');
 }
+/* Works on Firefox */
+* {
+  scrollbar-width: none;
+  scrollbar-color: white white;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 0px;
+}
+
+*::-webkit-scrollbar-track {
+  background: orange;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: blue;
+  border-radius: 20px;
+  border: 3px solid orange;
+}

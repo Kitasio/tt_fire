@@ -1,5 +1,5 @@
 <template>
-    <div class="flex w-full h-screen row-start-6 row-end-7 text-white main-text md:w-full md:h-auto md:mt-3 fixed items-end md:items-start font-brand-light justify-between uppercase tracking-wider text-justify cursor-pointer">
+    <div class="flex  h-screen row-start-6 row-end-7 text-white main-text md:w-full md:h-auto md:mt-3 fixed items-end md:items-start font-brand-light justify-between uppercase tracking-wider text-justify cursor-pointer">
         <router-link to="/portfolio" @mouseenter="portAnim" @mouseleave="leavePort" id="portfolio" class="relative mt-10 mr-6 md:mt-0 md:ml-main-x">
             <img id="portfolio1" class="absolute" src="/src/assets/portfolio.png" alt="">
             <img id="portfolio2" class="absolute" src="/src/assets/portfolio.png" alt="">

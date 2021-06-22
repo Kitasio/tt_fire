@@ -14,6 +14,9 @@ module.exports = {
         'brand-light': 'brand-light',
         'brand-ultralight': 'brand-ultralight',
       },
+      colors: {
+        'brand-green': '#ff00b8',
+      }
     },
   },
   variants: {
