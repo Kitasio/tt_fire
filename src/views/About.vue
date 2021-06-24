@@ -1,17 +1,17 @@
 <template>
   <div class="h-screen py-14 md:flex items-center">
-    <div id="about-container" style="background-color: #eeeeee" class="h-full mix-blend-difference md:h-1/2 md:w-2/3 md:mx-auto xl:w-1/2 overflow-y-scroll overscroll-auto">
+    <div id="about-container" style="background-color: #eeeeee" class="h-full mix-blend-difference md:h-1/2 md:w-auto md:mx-auto xl:w-auto overflow-y-scroll overscroll-auto">
   <Arrows />
 
-      <div class="grid relative border-gray-500 border-b grid-cols-2 md:grid-cols-3 h-64">
-        <div class="text-3xl uppercase pt-2 md:pt-5 pl-3 absolute md:relative md:border-r border-gray-500 md:w-full">services</div>
-        <div class="border-gray-500 md:border-r mx-auto my-16 md:my-0 md:py-5 md:pl-10 lg:pl-16 whitespace-nowrap text-sm md:text-base space-y-6 md:space-y-10 md:w-full">
+      <div class="grid relative border-gray-500 border-b border-t grid-cols-2 md:grid-cols-3">
+        <div class="text-3xl uppercase pt-2 md:pt-5 pl-3 absolute md:relative md:border-r border-gray-500 md:w-64 md:h-64 2xl:h-80 2xl:w-80">services</div>
+        <div class="mt-20 mb-16 border-gray-500 md:border-r mx-auto md:my-0 md:py-5 md:pl-10 lg:pl-16 whitespace-nowrap text-sm md:text-base space-y-6 md:space-y-10 md:w-64 md:h-64 2xl:h-80 2xl:w-80">
           <div>brand identity</div>
           <div>websites</div>
           <div>illustrations</div>
           <div>sound design</div>
         </div>
-        <div class="my-16 md:my-0 md:py-5 md:pr-16 text-sm md:text-base md:pl-10 lg:pl-16 whitespace-nowrap space-y-6 md:space-y-10 md:w-full">
+        <div class="mt-20 mb-16 md:my-0 md:py-5 md:pr-16 text-sm md:text-base md:pl-10 lg:pl-16 whitespace-nowrap space-y-6 md:space-y-10 md:w-64 md:h-64 2xl:h-80 2xl:w-80">
           <div>motion graphics</div>
           <div>design systems</div>
           <div>editorial design</div>
@@ -19,18 +19,21 @@
         </div>
       </div>
 
-      <div class="flex flex-col px-2 md:p-0 border-gray-500 border-b pb-10 md:mb-0 py-3 md:flex-row md:justify-between h-80 sm:h-64 md:min-h-64">
-        <div class="text-3xl uppercase pb-2 pl-2 md:pl-3 md:pt-4 md:border-r border-gray-500 md:w-1/3">about us</div>
-        <div class="md:w-2/3 text-sm md:text-base px-10 md:px-16 py-5 md:py-4">
-          <div class="lowercase mb-5">TWENTY TWOS IS A TEAM OF <span style="color: #ff00b8;">ARTISTS, DESIGNERS, MUSICIANS AND PROGRAMMERS</span>, WHICH ARE REALLY EXCITED ABOUT THE WORLD AND ITS VISUAL. </div>
-          <div class="lowercase mb-5">Our Russian-based team work with clients around the world.</div>
-          <div class="lowercase">OUR CORE NOT ONLY TO CREATE BUT TO INSPIRE THE WORLD. Always searching for new ways to make our clients thrive.</div>
+      <div class="flex relative flex-col px-2 md:p-0 border-gray-500 border-b pb-10 md:mb-0 py-3 md:flex-row md:justify-between h-80 md:h-64">
+        <div class="text-3xl uppercase pb-2 pl-2 md:pl-3 md:pt-4 md:border-r border-gray-500 md:w-64 md:h-64 2xl:h-80 2xl:w-80">about us</div>
+        <div class="text-3xl uppercase pb-2 pl-2 md:pl-3 md:pt-4 md:border-r border-gray-500 md:w-64 md:h-64 2xl:h-80 2xl:w-80"></div>
+        <div class="text-sm md:text-base border-gray-500 md:border-r px-10 md:px-16 py-4 md:w-64 md:h-64 2xl:h-80 2xl:w-80">
+          <div class="absolute md:top-4 md:left-80 2xl:ml-16 md:w-96 2xl:w-1/2 pr-5 md:pr-0 space-y-4 2xl:space-y-8">
+            <div class="lowercase">TWENTY TWOS IS&nbsp;A&nbsp;TEAM OF&nbsp; <span style="color: #ff00b8;">ARTISTS, DESIGNERS, MUSICIANS AND PROGRAMMERS</span>, WHICH ARE REALLY EXCITED ABOUT THE WORLD&nbsp;AND ITS VISUAL.</div>
+            <div class="lowercase">Our Russian-based team work with clients around the world.</div>
+            <div class="lowercase">OUR CORE is NOT ONLY TO&nbsp;CREATE BUT TO&nbsp;INSPIRE THE WORLD. Always searching for new ways to&nbsp;make our clients thrive.</div>
+          </div>
         </div>
       </div>
 
-      <div class="grid relative border-gray-500 border-b grid-cols-2 md:grid-cols-3 h-64">
+      <div class="grid relative border-gray-500 border-b grid-cols-2 md:grid-cols-3">
         <div class="text-3xl uppercase pt-2 md:pt-5 pl-3 absolute md:relative md:border-r border-gray-500 md:w-full">some clients</div>
-        <div class="border-gray-500 md:border-r mx-auto my-16 pl-5 md:my-0 md:py-5 md:pl-10 lg:pl-16 whitespace-nowrap text-sm md:text-base space-y-6 md:space-y-10 md:w-full">
+        <div class="border-gray-500 md:border-r mx-auto mt-20 mb-16 pl-5 md:my-0 md:py-5 md:pl-10 lg:pl-16 whitespace-nowrap text-sm md:text-base space-y-6 md:space-y-10 md:w-full">
           <div>
             <a href="#" class="transition hover:text-brand-green">storytel</a>
           </div>
@@ -44,7 +47,7 @@
             <a href="#" class="transition hover:text-brand-green">samara university</a>
           </div>
         </div>
-        <div class="my-16 pl-5 md:my-0 md:py-5 md:pr-16 text-sm md:text-base md:pl-10 lg:pl-16 whitespace-nowrap space-y-6 md:space-y-10 md:w-full">
+        <div class="mt-20 mb-16 pl-5 md:my-0 md:py-5 md:pr-16 text-sm md:text-base md:pl-10 lg:pl-16 whitespace-nowrap space-y-6 md:space-y-10 md:w-full">
           <div>
             <a href="#" class="transition hover:text-brand-green">adidas</a>
           </div>
@@ -60,10 +63,13 @@
         </div>
       </div>
 
-      <div class="flex flex-col px-2 md:p-0 border-gray-500 border-b pb-32 h-64 md:mb-0 py-3 md:flex-row md:justify-between">
-        <div class="text-3xl uppercase pb-2 pl-2 md:pl-3 md:pt-4 md:border-r border-gray-500 md:w-1/3">conclusion</div>
-        <div class="md:w-2/3 text-sm md:text-base px-10 md:px-16 py-5 md:py-4">
-          <div class="lowercase mb-5">Let’s work together ladies and gentlemen, <span style="color: #ff00b8;">we are into it!</span></div>
+      <div class="flex relative flex-col px-2 md:p-0 border-gray-500 border-b pb-10 md:mb-0 py-3 md:flex-row md:justify-between h-80 md:h-64 2xl:h-80">
+        <div class="text-3xl uppercase pb-2 pl-2 md:pl-3 md:pt-4 md:border-r border-gray-500 md:w-64 md:h-64 2xl:h-80 2xl:w-80">conclusion</div>
+        <div class="text-3xl uppercase pb-2 pl-2 md:pl-3 md:pt-4 md:border-r border-gray-500 md:w-64 md:h-64 2xl:h-80 2xl:w-80"></div>
+        <div class="text-sm md:text-base border-gray-500 md:border-r px-10 py-4 md:w-64 md:h-64 2xl:h-80 2xl:w-80">
+          <div class="absolute md:top-4 md:left-80 2xl:ml-16 md:w-96 pr-5 md:pr-0">
+            <div class="lowercase mb-5">let&rsquo;s work together ladies and gentlemen, <span style="color: #ff00b8;">we&nbsp;are into&nbsp;it!</span></div>
+          </div>
         </div>
       </div>
 
