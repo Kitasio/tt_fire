@@ -19,7 +19,7 @@
         </div>
       </div>
 
-      <div class="flex relative flex-col px-2 md:p-0 border-gray-500 border-b pb-10 md:mb-0 py-3 md:flex-row md:justify-between h-80 md:h-64">
+      <div class="flex relative flex-col px-2 md:p-0 border-gray-500 border-b pb-10 md:mb-0 py-3 md:flex-row md:justify-between h-80 md:h-64 2xl:h-80">
         <div class="text-3xl uppercase pb-2 pl-2 md:pl-3 md:pt-4 md:border-r border-gray-500 md:w-64 md:h-64 2xl:h-80 2xl:w-80">about us</div>
         <div class="text-3xl uppercase pb-2 pl-2 md:pl-3 md:pt-4 md:border-r border-gray-500 md:w-64 md:h-64 2xl:h-80 2xl:w-80"></div>
         <div class="text-sm md:text-base border-gray-500 md:border-r px-10 md:px-16 py-4 md:w-64 md:h-64 2xl:h-80 2xl:w-80">
@@ -31,7 +31,7 @@
         </div>
       </div>
 
-      <div class="grid relative border-gray-500 border-b grid-cols-2 md:grid-cols-3">
+      <div class="grid relative border-gray-500 border-b grid-cols-2 md:grid-cols-3 2xl:h-80">
         <div class="text-3xl uppercase pt-2 md:pt-5 pl-3 absolute md:relative md:border-r border-gray-500 md:w-full">some clients</div>
         <div class="border-gray-500 md:border-r mx-auto mt-20 mb-16 pl-5 md:my-0 md:py-5 md:pl-10 lg:pl-16 whitespace-nowrap text-sm md:text-base space-y-6 md:space-y-10 md:w-full">
           <div>
