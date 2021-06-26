@@ -6,10 +6,10 @@
     </router-link>
   </div> -->
   <div class="h-screen pt-14 flex md:items-center">
-    <div class="flex flex-col w-full md:flex-row md:flex-wrap md:mx-main-x lg:w-7/12 lg:mx-auto xl:w-1/2">
+    <div class="flex flex-col w-full md:flex-row md:flex-wrap md:mx-main-x lg:mx-auto lg:w-8/12 2xl:w-7/12">
       <router-link :to="`/portfolio/${project.id}`" v-for="project in projects" :key="project.id" class="md:w-1/3 relative">
-        <img class="h-full w-full" :src="project.img" alt="">
-        <img class="absolute top-0 left-0 opacity-0 transition-all duration-700 hover:opacity-100 z-10" :src="project.imgHover" alt="">
+        <img class="md:h-full md:w-full" :src="project.img" alt="">
+        <img class="md:h-full md:w-full absolute top-0 left-0 opacity-0 transition-all duration-700 hover:opacity-100 z-10" :src="project.imgHover" alt="">
       </router-link>
     </div>
   </div>
@@ -25,6 +25,10 @@ onMounted(() => {
 })
 </script>
 
-<style>
-
+<style scoped>
+@media (min-width: 1024px) {
+  .main-width {
+    width: 80%;
+  }
+}
 </style>

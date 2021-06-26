@@ -8,7 +8,7 @@ const getProjects = () => {
 
     const load = async () => {
         try {
-            const res = await db.collection("projects").get()
+            const res = await db.collection("projects").orderBy("order").get()
             projects.value = res.docs.map(doc => {
                 return { ...doc.data(), id: doc.id }
             })

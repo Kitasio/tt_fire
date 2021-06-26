@@ -1,5 +1,5 @@
 const projectAnim = () => {
-    const anim = (proj1, proj2, proj3) => {
+    const anim = () => {
         gsap.registerPlugin(ScrollTrigger)
         let sections = gsap.utils.toArray(".labels")
         const tl = gsap.timeline({ease: "power4.in", scrollTrigger: {

@@ -6,6 +6,7 @@ module.exports = {
       spacing: {
         'main-y': '1.5%',
         'main-x': '1.6%',
+        'mobile-height': '375px',
       },
       fontFamily: {
         'brand-roman': 'brand-roman',
