@@ -21,7 +21,7 @@ const contactAnim = () => {
     tl2.to("#contact2", {scaleY: 0, duration: .8, transformOrigin: "top", ease: "out"})
 }
 onMounted(() => {
-    contactAnim()
+    // contactAnim()
 })
 </script>
 

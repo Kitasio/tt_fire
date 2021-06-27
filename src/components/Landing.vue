@@ -38,9 +38,9 @@ const { anim } = projectAnim()
 onMounted(() => {
     load()
     anim()
-    const tl = gsap.timeline({ repeat: -1 })
-    tl.set("#freshProj", {xPercent: -8})
-    tl.to("#freshProj", { xPercent: 8.7, duration: 3, ease: "none" })
+    // const tl = gsap.timeline({ repeat: -1 })
+    // tl.set("#freshProj", {xPercent: -8})
+    // tl.to("#freshProj", { xPercent: 8.7, duration: 3, ease: "none" })
 })
 
 </script>

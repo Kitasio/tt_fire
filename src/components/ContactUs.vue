@@ -1,5 +1,5 @@
 <template>
-  <div @keyup.space="closeModal" @click.self="closeModal"  :class="{ 'invisible opacity-0': isHidden }" class="flex transition-all duration-500 items-center h-screen z-30 w-full absolute bg-gray-800 bg-opacity-40 top-0">
+  <div @keyup.esc="closeModal" @click.self="closeModal"  :class="{ 'invisible opacity-0': isHidden }" class="flex transition-all duration-500 items-center h-screen z-30 w-full absolute bg-gray-800 bg-opacity-40 top-0">
       <div class="bg-white w-full h-2/3 md:w-1/2 mx-auto md:h-1/2">
         <div class="p-4 w-full h-full md:p-6 flex justify-between flex-col overflow-y-scroll">
             <div>
@@ -31,7 +31,7 @@ const closeModal = () => {
 }
 
 const submit = () => {
-    axios.post("http://178.154.205.40/tg/clientRequest", {
+    axios.post("https://twentytwos.xyz/tg/clientRequest", {
         name: doc.value.name,
         email: doc.value.email,
         messenger: doc.value.messenger,
