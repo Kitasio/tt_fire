@@ -10,11 +10,7 @@
             fresh project<span class="mx-4" style="color: #00ffde">*</span>
         </div>
         <div class="relative w-full mx-auto h-full md:h-1/2">
-            <!-- <router-link v-for="project in projects" :key="project.id" :to="`/portfolio/${project.id}`">
-                <img :id="project.id" class="labels absolute object-cover h-full  w-full" :src="project.img" alt="">
-            </router-link> -->
-
-            <a href="##">
+            <a href="#">
                 <img id="proj1" class="labels absolute object-cover h-full  w-full" src="../assets/blue.png" alt="">
             </a>
             <a href="##">
@@ -38,9 +34,9 @@ const { anim } = projectAnim()
 onMounted(() => {
     load()
     anim()
-    // const tl = gsap.timeline({ repeat: -1 })
-    // tl.set("#freshProj", {xPercent: -8})
-    // tl.to("#freshProj", { xPercent: 8.7, duration: 3, ease: "none" })
+    const tl = gsap.timeline({ repeat: -1 })
+    tl.set("#freshProj", {xPercent: -8, mixBlendMode: "difference"})
+    tl.to("#freshProj", { xPercent: 8.7, duration: 3, ease: "none" })
 })
 
 </script>

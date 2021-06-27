@@ -34,7 +34,7 @@ const toggleBurger = ref(true)
 body {
   overflow-x: hidden !important;
 }
-.fade-enter-active,
+/* .fade-enter-active,
 .fade-leave-active {
   transition: opacity .5s ease;
 }
@@ -42,8 +42,5 @@ body {
 .fade-enter-from,
 .fade-leave-to {
   opacity: 0;
-}
-.fade-enter-to {
-  opacity: 1;
-}
+} */
 </style>

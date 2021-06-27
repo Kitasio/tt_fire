@@ -1,5 +1,5 @@
 <template>
-    <div class="contact mr-3 mb-3 flex w-40 fixed bottom-0 mix-blend-difference right-0 md:mr-main-x md:mb-main-y">
+    <div class="contact mr-3 mb-3 flex w-40 fixed bottom-0 mix-blend-difference right-0 md:mr-main-x md:mb-main-y z-10">
 
             <img id="contact1" class="contact-y absolute w-full" src="/icons/contact.png" alt="">
             <img id="contact2" class="contact-y absolute w-full" src="/icons/contact.png" alt="">
@@ -21,7 +21,7 @@ const contactAnim = () => {
     tl2.to("#contact2", {scaleY: 0, duration: .8, transformOrigin: "top", ease: "out"})
 }
 onMounted(() => {
-    // contactAnim()
+    contactAnim()
 })
 </script>
 

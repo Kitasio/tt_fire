@@ -19,7 +19,7 @@
               <img style="max-width: 84.4%; margin-left: 14%" class="object-fit mr-main-x" src="/desktop.png" alt="">
             </div>
       </div>
-      <Navlinks />
+      <Navlinks @changePage="test" />
   </div>
 </template>
 
@@ -33,7 +33,9 @@ const { animLogo } = logoAnim()
 onMounted(() => {
     animLogo()
 })
-
+const test = () => {
+  console.log("asfafasfasf suka test")
+}
 const emits = defineEmit(['toggle'])
 const props = defineProps(['burgerState'])
 
@@ -41,7 +43,7 @@ const burgerAnim = () => {
   if (props.burgerState == true) {
     const tl = gsap.timeline({ pause: true })
     tl.to("#burger1", { y: 10, duration: 0.3 })
-    tl.to("#burger3", { y: -10, duration: 0.3 }, "-=.2")
+    tl.to("#burger3", { y: -10, duration: 0.3 }, "-=.3")
     tl.set("#burger2", {opacity: 0})
 
     tl.to("#burger1", { rotate: 45, duration: .2 })
@@ -55,7 +57,7 @@ const burgerAnim = () => {
 
     tl.set("#burger2", {opacity: 1})
     tl.to("#burger1", { y: -1, duration: .3 })
-    tl.to("#burger3", { y: 1, duration: .3 })
+    tl.to("#burger3", { y: 1, duration: .3 }, "-=.3")
   }
 }
 const toggleNav = () => {
