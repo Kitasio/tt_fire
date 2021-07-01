@@ -1,7 +1,7 @@
 <template>
   <div id="main-anim" class="flex flex-col md:justify-center md:items-center md:w-1/2 mx-auto pt-14 pb-14 h-screen overflow-x-hidden">
           
-        <div id="freshProj" class="uppercase mix-blend-difference whitespace-nowrap text-white">
+        <div id="freshProj" class="uppercase z-10 mix-blend-difference whitespace-nowrap text-white">
             fresh project<span class="mx-4" style="color: #00ffde">*</span>
             fresh project<span class="mx-4" style="color: #00ffde">*</span>
             fresh project<span class="mx-4" style="color: #00ffde">*</span>
@@ -10,15 +10,19 @@
             fresh project<span class="mx-4" style="color: #00ffde">*</span>
         </div>
         <div class="relative w-full mx-auto h-full md:h-1/2">
-            <a href="#">
-                <img id="proj1" class="labels absolute object-cover h-full  w-full" src="../assets/blue.png" alt="">
-            </a>
-            <a href="##">
-                <img id="proj2" class="labels absolute object-cover h-full  w-full" src="../assets/package.jpg" alt="">
-            </a>
-            <a href="###">
-                <img id="proj3" class="labels absolute object-cover h-full  w-full" src="../assets/ball.jpg" alt="">
-            </a>
+            <router-link to="/portfolio/D&Z">
+                <img class="proj1 labels z-10 absolute object-cover h-full w-full " src="/img/dz.jpg" alt="">
+                <!-- <img class="proj1 z-10 absolute object-cover opacity-100 hover:opacity-100 transition-all duration-700 h-full w-full" src="/img/dz_hover.jpg" alt=""> -->
+                <!-- <div class="tut w-full h-full z-10 opacity-0 hover:opacity-100 absolute"></div> -->
+            </router-link>
+            <router-link to="/portfolio/frederico">
+                <img class="proj2 labels z-10 absolute object-cover h-full  w-full" src="/img/post.jpg" alt="">
+                <!-- <img class="proj2 z-10 absolute object-cover h-full opacity-0 hover:opacity-100 transition-all duration-700  w-full" src="/img/post_hover.jpg" alt=""> -->
+            </router-link>
+            <router-link to="/portfolio/shadows">
+                <img class="proj3 labels z-10 absolute object-cover h-full  w-full" src="/img/tt.jpg" alt="">
+                <!-- <img class="proj3 z-10 absolute object-cover h-full opacity-0 hover:opacity-100 transition-all duration-700  w-full" src="/img/tt_hover.jpg" alt=""> -->
+            </router-link>
         </div>
   </div>
 </template>
@@ -26,13 +30,10 @@
 <script setup>
 import { onMounted } from '@vue/runtime-core'
 import projectAnim from '../functions/projectAnim'
-import getProjects from '../functions/getProjects'
 import {ref} from 'vue'
 
-const { projects, error, ids, load } = getProjects()
 const { anim } = projectAnim()
 onMounted(() => {
-    load()
     anim()
     const tl = gsap.timeline({ repeat: -1 })
     tl.set("#freshProj", {xPercent: -8, mixBlendMode: "difference"})
@@ -45,6 +46,10 @@ onMounted(() => {
 @media only screen and (min-width: 768px) {
     #freshProj {
         font-size: 1vw;
+    }
+    .tut {
+        background-image: url("/img/dz_hover.jpg");
+        background-size: 100%;
     }
 }
 </style>

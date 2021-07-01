@@ -19,7 +19,7 @@
               <img style="max-width: 84.4%; margin-left: 14%" class="object-fit mr-main-x" src="/desktop.png" alt="">
             </div>
       </div>
-      <Navlinks @changePage="test" />
+      <Navlinks />
   </div>
 </template>
 
@@ -33,9 +33,6 @@ const { animLogo } = logoAnim()
 onMounted(() => {
     animLogo()
 })
-const test = () => {
-  console.log("asfafasfasf suka test")
-}
 const emits = defineEmit(['toggle'])
 const props = defineProps(['burgerState'])
 

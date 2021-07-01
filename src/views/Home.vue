@@ -1,6 +1,8 @@
 <template>
  <Arrows />
  <Landing /> 
+ <img id="post_bg" class="absolute top-0 h-screen w-full object-cover" src="/img/post_bg.png" alt="">
+ <img id="tt_bg" class="absolute top-0 h-screen w-full object-cover" src="/img/tt_bg.png" alt="">
 </template>
 
 <script setup>

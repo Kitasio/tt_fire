@@ -1,7 +1,7 @@
 <template>
   <div @keyup.esc="closeModal" @click.self="closeModal"  :class="{ 'invisible opacity-0': isHidden }" class="flex transition-all duration-500 items-center h-screen z-30 w-full absolute bg-gray-800 bg-opacity-40 top-0">
       <div class="bg-white w-full h-2/3 md:w-1/2 mx-auto md:h-1/2 relative">
-        <div id="requestSuccess" class="invisible absolute w-full h-full flex items-center justify-center font-brand-roman text-lg p-5">
+        <div id="requestSuccess" :class="{ 'hidden': isHidden }" class="invisible absolute w-full h-full flex items-center justify-center font-brand-roman text-lg p-5">
             <p>YOUR REQUEST HAS BEEN SENT, THANK YOU!</p>
         </div>
         <div id="formFields" class="p-4 w-full h-full md:p-6 flex justify-between flex-col overflow-y-scroll">
@@ -65,5 +65,9 @@ const doc = ref({
 }
 #txt:focus {
     height:100px;
+}
+.hide-modal {
+    width: 0px !important;
+    transform-origin: center !important;
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
 <div class="hidden lg:inline">
-  <div id="arrow1" class="absolute w-0.5 mix-blend-difference bg-white"></div>
-  <div id="arrow2" class="absolute w-0.5 mix-blend-difference bg-white"></div>
+  <div id="arrow1" class="absolute w-0.5 z-10 mix-blend-difference bg-white"></div>
+  <div id="arrow2" class="absolute w-0.5 z-10 mix-blend-difference bg-white"></div>
 </div>
 </template>
 
