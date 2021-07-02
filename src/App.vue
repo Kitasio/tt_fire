@@ -1,5 +1,5 @@
 <template>
-  <div id="container" class="bg-white font-brand-roman md:overflow-hidden max-h-screen">
+  <div id="container" class="bg-white font-brand-roman overflow-hidden max-h-screen">
     <Nav @toggle="toggleBurger = !toggleBurger" :burgerState="toggleBurger" />
 
     <router-view v-slot="{ Component }">

@@ -11,7 +11,7 @@
                   <div id="burger3"></div>
               </div>
             </div>
-            <div class="md:flex hidden md:relative">
+            <div class="md:flex items-start hidden md:relative">
               <router-link to="/">
                 <img id="logo1" class="absolute ml-main-x" style="max-width: 9.3vw; max-height: 3.3rem;" src="/logo.png" alt="">
                 <img id="logo2" class="absolute ml-main-x" style="max-width: 9.3vw; max-height: 3.3rem;" src="/logo.png" alt="">

@@ -1,13 +1,13 @@
 <template>
     <div class="hidden md:flex h-screen row-start-6 row-end-7 text-white main-text md:w-full md:h-auto md:mt-3 fixed items-end md:items-start font-brand-light justify-between uppercase tracking-wider text-justify cursor-pointer">
         <router-link to="/portfolio" @mouseenter="portAnim" @mouseleave="leavePort" id="portfolio" class="relative mt-10 mr-6 md:mt-0 md:ml-main-x">
-        <span>
+        <span class="mix-blend-difference">
             <img id="portfolio1" class="absolute" src="/src/assets/portfolio.png" alt="">
             <img id="portfolio2" class="absolute" src="/src/assets/portfolio.png" alt="">
         </span>
         </router-link>
         
-        <router-link to="/about" @mouseenter="aboutAnim" @mouseleave="leaveAbout" id="about" class="relative mt-10 ml-6 md:mt-0 md:mr-main-x">
+        <router-link to="/about" @mouseenter="aboutAnim" @mouseleave="leaveAbout" id="about" class="mix-blend-difference relative mt-10 ml-6 md:mt-0 md:mr-main-x">
             <img id="about1" class="absolute" src="/src/assets/about.png" alt="">
             <img id="about2" class="absolute" src="/src/assets/about.png" alt="">
         </router-link>
