@@ -15,11 +15,13 @@ const routes = [
         path: '/portfolio',
         name: 'Portfolio',
         component: Portfolio,
+        meta: { transition: 'fade' },
     },
     {
         path: '/about',
         name: 'about',
         component: About,
+        meta: { transition: 'abo' },
     },
     {
         path: '/portfolio/:id',

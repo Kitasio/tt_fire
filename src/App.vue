@@ -2,8 +2,8 @@
   <div id="container" class="bg-white font-brand-roman overflow-hidden max-h-screen">
     <Nav @toggle="toggleBurger = !toggleBurger" :burgerState="toggleBurger" />
 
-    <router-view v-slot="{ Component }">
-      <transition name="fade">
+    <router-view v-slot="{ Component, route }">
+      <transition :name="route.meta.transition || 'fade'">
         <component :is="Component" />
       </transition>
     </router-view>
@@ -34,7 +34,7 @@ const toggleBurger = ref(true)
 body {
   overflow-x: hidden !important;
 }
-/* .fade-enter-active,
+.fade-enter-active,
 .fade-leave-active {
   transition: opacity .5s ease;
 }
@@ -42,5 +42,16 @@ body {
 .fade-enter-from,
 .fade-leave-to {
   opacity: 0;
-} */
+}
+
+.abo-enter-active{
+  mix-blend-mode: difference;
+  transition: opacity .5s ease;
+}
+
+.abo-enter-from,
+.abo-leave-to {
+  mix-blend-mode: difference;
+  opacity: 0;
+}
 </style>
